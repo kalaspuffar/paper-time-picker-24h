@@ -2,7 +2,7 @@
   "name": "paper-time-picker-24h",
   "version": "1.0.5",
   "authors": [
-    "Ben Davis <bendavis78@gmail.com>"
+    "Ben Davis <bendavis78@gmail.com>",
     "Daniel Persson <mailto.woden@gmail.com>"
   ],
   "description": "Provides a responsive 24h time picker based on the material design spec",
