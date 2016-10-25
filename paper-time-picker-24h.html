@@ -22,7 +22,7 @@ component aims to be a clone of the time picker introduced in Android Lollipop.
 
 Default picker:
 
-    <paper-time-picker></paper-time-picker>
+    <paper-time-picker-24h></paper-time-picker-24h>
 
 Setting the initial time to 04:20 (note that hours given as 24-hour):
 
@@ -33,7 +33,7 @@ If you include this element as part of `paper-dialog`, use the class
 
     <paper-dialog id="dialog" modal class="paper-time-picker-dialog"
       on-iron-overlay-closed="dismissDialog">
-      <paper-time-picker id="timePicker" time="[[time]]"></paper-time-picker>
+      <paper-time-picker-24h id="timePicker" time="[[time]]"></paper-time-picker-24h>
       <div class="buttons">
         <paper-button dialog-dismiss>Cancel</paper-button>
         <paper-button dialog-confirm>OK</paper-button>
@@ -50,7 +50,7 @@ If you include this element as part of `paper-dialog`, use the class
   /* include dialog style at document-level for backward compatibility */
 </style>
 
-<dom-module id="paper-time-picker">
+<dom-module id="paper-time-picker-24h">
   <template>
     <style>
       :host * {
@@ -223,7 +223,7 @@ If you include this element as part of `paper-dialog`, use the class
       }
 
       Polymer({
-        is: 'paper-time-picker',
+        is: 'paper-time-picker-24h',
         properties: {
           /**
            * The selected time
